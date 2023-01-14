@@ -1,0 +1,284 @@
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+input {
+  font-size: 14px;
+}
+
+body {
+  line-height: 1.4;
+  color: #333333;
+  /*add*/
+  text-rendering: optimizeLegibility;
+  font-family: Georgia;
+}
+
+h1 {
+  margin-bottom: 16px;
+  /*add*/
+  letter-spacing: 1px;
+  font-family: Century;
+  /* font-style: italic; */
+  font-size: 240%;
+  text-align: center;
+  color: #480766;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  /* add */
+  font-size: 16px;
+  color: rgb(92, 91, 91);
+}
+
+input {
+  border: 1px solid #eeeeee;
+  padding: 12px;
+  outline: none;
+  /*add*/
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  padding: 12px;
+  /* background: #9b4cc0; */
+  border: none;
+  color: white;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  /* add */
+  background: linear-gradient(to bottom right, #aa5ddd, #862797);
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+button:hover {
+  /* background: #6b47b8; */
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #7d42a5, #841597);
+  transform: translateY(-5px);
+}
+button:active {
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  cursor: default;
+  background: #7c5cbf94;
+}
+
+.btn-style {
+  text-align: center;
+  margin-top: 10px;
+  font-size: larger;
+}
+
+/* Join Page Styles */
+
+.centered-form {
+  /* background: #333744; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*add*/
+  background: linear-gradient(to bottom right, #df70ee, #470363);
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.centered-form__box {
+  box-shadow: 0px 0px 17px 1px #1d1f26;
+  background: #f7f7fa;
+  padding: 24px;
+  /* width: 500px; */
+  /*add*/
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  width: 380px;
+  border-radius: 30px;
+}
+
+.centered-form button {
+  /*add*/
+  width: 70%;
+  margin-left: 15%;
+}
+
+.centered-form input {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+/* Chat Page Layout */
+
+.chat {
+  display: flex;
+}
+
+.chat__sidebar {
+  height: 100vh;
+  color: white;
+  background: linear-gradient(#761da9, #4f0b7c);
+  width: 225px;
+  overflow-y: scroll;
+}
+
+/* Chat styles */
+
+.chat__main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  /* add */
+  background-image: linear-gradient(
+      rgba(233, 193, 230, 0.13),
+      rgba(193, 34, 233, 0.13)
+    ),
+    url('../img/wallpaper.png');
+  background-size: cover;
+}
+
+.chat__messages {
+  flex-grow: 1;
+  padding: 24px 24px 0 24px;
+  overflow-y: scroll;
+  /* add */
+}
+
+/* Message Styles */
+
+.message {
+  margin-bottom: 16px;
+  /* add */
+  /* background: linear-gradient(#c192df, #8f8ee7); */
+  background: linear-gradient(#d7b8eb, #9693e7);
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 6px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.message__name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 8px;
+  /* add */
+  text-transform: capitalize;
+}
+
+.message__meta {
+  font-family: Arial;
+  color: rgb(76, 78, 80);
+  font-size: 14px;
+}
+
+.message a {
+  color: #003c6d;
+}
+/* Message Composition Styles */
+
+.compose {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 16px;
+  padding: 24px;
+}
+
+.compose form {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 16px;
+}
+
+.compose input {
+  border: 1px solid #eeeeee;
+  width: 100%;
+  padding: 12px;
+  margin: 0 16px 0 0;
+  flex-grow: 1;
+}
+
+.compose button {
+  font-size: 14px;
+}
+
+/* Chat Sidebar Styles */
+
+.room-title {
+  font-weight: 400;
+  font-size: 22px;
+  font-family: Century;
+  /* top, right, bottom, left */
+  padding: 20px 0px 10px 0px;
+  align-content: center;
+}
+
+.room-name {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 0px 15px 0px;
+  align-content: center;
+}
+
+.room_bg {
+  background: #4f0b7c;
+  text-align: center;
+}
+
+.list-title {
+  font-weight: 550;
+  margin-bottom: 4px;
+  padding: 12px 24px 0px 0px;
+  /* add */
+  text-align: center;
+  font-family: Century;
+  font-size: 22px;
+}
+
+.users {
+  list-style-type: none;
+  font-weight: 300;
+  padding: 12px 24px 0px 0px;
+  /* add */
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+}

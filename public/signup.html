@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gabfest App</title>
+    <link rel="icon" href="/img/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="centered-form">
+      <div class="centered-form__box">
+        <h1>Sign Up</h1>
+        <form action="/signup" method="post">
+          <label>Username</label>
+          <input type="text" name="username" placeholder="Username" required />
+          <label>E-mail</label>
+          <input type="text" name="email" placeholder="E-mail" required />
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            id="PWD"
+            placeholder="Password"
+            required
+          />
+          <label>
+            <input
+              type="checkbox"
+              style="width: auto"
+              onclick="showPassword()"
+            />
+            Show Password
+          </label>
+          <button>Sign Up</button>
+          <label class="btn-style">
+            Already a User? <a href="login.html"> Login here </a>
+          </label>
+        </form>
+      </div>
+    </div>
+    <script>
+      function showPassword() {
+        var p = document.getElementById('PWD');
+        if (p.type === 'password') {
+          p.type = 'text';
+        } else {
+          p.type = 'password';
+        }
+      }
+    </script>
+  </body>
+</html>

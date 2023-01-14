@@ -1,0 +1,192 @@
+/* Basic Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: white;
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* *****************  Heading ********************* */
+
+h1,
+h2 {
+  font-weight: 300;
+  font-style: italic;
+  padding: 8px 8px;
+  text-align: justify;
+}
+h1 {
+  font-size: 100px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+header {
+  background-image: linear-gradient(
+      to right,
+      rgba(16, 1, 22, 0.644),
+      rgba(102, 14, 153, 0.904)
+    ),
+    url('../img/bg2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+
+/* ******************  Component ******************* */
+
+.row {
+  /* max-width: 50px;
+  padding: 50px 480px; */
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+
+.div-text-box {
+  position: absolute;
+  height: 100px;
+  width: 900px;
+  top: 50%;
+  left: 50%;
+  align-content: justify;
+  transform: translate(-50%, -50%);
+}
+
+/* ******************  Link ******************* */
+.title-bar {
+  color: black;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* main-navi */
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #9149a3;
+}
+
+/* ******************  Flicker ******************* */
+.flick {
+  -webkit-animation: flicker 1s ease-in-out infinite alternate;
+  animation: flicker 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes flicker {
+  from {
+    text-shadow: 0 0 5px #00dcff, 0 0 10px #00dcff, 0 0 20px #00dcff,
+      0 0 40px #00dcff;
+  }
+
+  to {
+    text-shadow: 0 0 5px #09889c, 0 0 10px #09889c, 0 0 20px #09889c,
+      0 0 40px #09889c;
+  }
+}
+
+@keyframes flicker {
+  from {
+    text-shadow: 0 0 5px #00dcff, 0 0 10px #00dcff, 0 0 20px #00dcff,
+      0 0 40px #00dcff;
+  }
+
+  to {
+    text-shadow: 0 0 5px #09889c, 0 0 10px #09889c, 0 0 20px #09889c,
+      0 0 40px #09889c;
+  }
+}
+
+/* ******************  Button ******************* */
+button {
+  cursor: pointer;
+  padding: 12px;
+  /* background: #9b4cc0; */
+  border: none;
+  color: white;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  /* add */
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, #aa5ddd, #862797);
+  transition: all 0.2s;
+  margin: 30px 10px 0px 0px;
+  width: 100px;
+}
+
+/* ******************  Button ******************* */
+button {
+  cursor: pointer;
+  padding: 12px;
+  /* background: #9b4cc0; */
+  border: none;
+  color: white;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  /* add */
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, #aa5ddd, #862797);
+  transition: all 0.2s;
+  margin: 30px 10px 0px 0px;
+  width: 100px;
+}
+
+/* ******************  Button ******************* */
+button {
+  cursor: pointer;
+  padding: 12px;
+  /* background: #9b4cc0; */
+  border: none;
+  color: white;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  /* add */
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, #aa5ddd, #862797);
+  transition: all 0.2s;
+  margin: 30px 10px 0px 0px;
+  width: 100px;
+}
+
+button:hover {
+  /* background: #6b47b8; */
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #7d42a5, #841597);
+  transform: translateY(-5px);
+}
+button:active {
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  cursor: default;
+  background: #7c5cbf94;
+}

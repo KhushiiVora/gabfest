@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <style>
+      p {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+      }
+    </style> -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabfest App</title>
+    <link rel="icon" href="/img/logo.png" />
+    <link rel="Stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="centered-form">
+      <!-- <p>
+        <button type="submit" style="width: 100px">Sign Out</button>
+      </p> -->
+      <div class="centered-form__box">
+        <h1>Room</h1>
+        <form>
+          <label>Display name</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Display name"
+            required
+          />
+          <label>Room</label>
+          <input type="text" name="room" placeholder="Room code" required />
+          <button
+            type="submit"
+            formaction="/create"
+            style="margin-bottom: 12px"
+          >
+            Create
+          </button>
+          <button type="submit" formaction="/join">Join</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

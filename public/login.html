@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gabfest App</title>
+    <link rel="icon" href="/img/logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="centered-form">
+      <div class="centered-form__box">
+        <h1>Login</h1>
+        <form action="/login" method="post">
+          <label>E-mail</label>
+          <input type="text" name="email" placeholder="E-mail" required />
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <button>Login</button>
+          <label class="btn-style">
+            New User? <a href="signup.html"> Create account </a>
+          </label>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
